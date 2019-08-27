@@ -1,0 +1,115 @@
+/* CSS reset */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* Header */
+.header{
+    background-color: #117A25;
+    padding:20px;
+}
+.header__titulo{
+    color: #F2F2F2;
+    font-style: normal;
+    font-family:'Roboto', 'sans-serif';
+    padding: 20px
+
+}
+.header__titulo--instituto{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    
+}
+.header__titulo--curso{    
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+/* Menu */
+.menu{
+    background-color: #00420C;
+    
+}
+.menu__item > a{
+    text-decoration: none;
+    color:#F2F2F2; 
+}
+.menu__item > a:hover{
+    background-color: white;
+    color: #00420C;
+    display: block;
+}
+
+
+
+
+
+
+
+
+/* Main */
+.main{
+    margin: 0,auto;
+    padding: 30px;
+}
+.section{
+    padding: 20px;
+}
+.subtitulo{
+    font-family: 'Roboto','Sans-serif';
+    text-align: center;
+    font-size: 24px;
+    color: #00420C;
+    padding: 10px;
+}
+.texto{
+    text-align: justify;
+}
+
+.notaCurso{
+    background-color: #117A25;
+    border-radius: 5px;
+    padding:20px;
+    text-align: center;
+    color:white;
+    font-family: 'Roboto','Sans-serif'
+    
+}
+
+.notaCurso__conceito{
+    padding: 15px;
+    
+}
+.imagemCoordenador{
+    margin: 0 auto;
+    border: 2px solid #00420C;
+    border-radius: 10px;
+    
+    
+    
+}
+
+
+
+/* Footer */
+
+.footer{
+    background-color: #00420C;
+    text-align: center;
+    margin: 0 auto;
+}
+.footer__logo{
+    max-width: 100px;
+    
+}
+.footer__text{
+    padding:20px;
+    color:white;
+    text-align: left;
+    
+
+    
+}
