@@ -4,11 +4,16 @@
     padding:0;
     box-sizing: border-box;
 }
+.container{
+    max-width: 1200px;
+    margin: 0
+}
 /* Header */
 .header{
     background-color: #117A25;
     padding:20px;
 }
+
 .header__titulo{
     color: #F2F2F2;
     font-style: normal;
@@ -31,11 +36,24 @@
 /* Menu */
 .menu{
     background-color: #00420C;
-    
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+@media(min-width:600px){
+.menu{
+    flex-direction: row;
+}
+}
+
+.menu__item{
+    padding: 5px;
 }
 .menu__item > a{
     text-decoration: none;
     color:#F2F2F2; 
+    
+    
 }
 .menu__item > a:hover{
     background-color: white;
@@ -57,7 +75,10 @@
 }
 .section{
     padding: 20px;
+    display: flex;
+    flex-direction: column
 }
+
 .subtitulo{
     font-family: 'Roboto','Sans-serif';
     text-align: center;
@@ -67,6 +88,8 @@
 }
 .texto{
     text-align: justify;
+    display: inline-block;
+    
 }
 
 .notaCurso{
@@ -100,8 +123,17 @@
     background-color: #00420C;
     text-align: center;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+@media(min-width:600px){
+    .footer{
+        flex-direction: row
+    }
 }
 .footer__logo{
+    padding:5px;
+    margin-top:10px;
     max-width: 100px;
     
 }
