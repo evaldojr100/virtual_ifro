@@ -86,6 +86,7 @@
 }
 
 .subtitulo{
+    display: block;
     font-family: 'Roboto','Sans-serif';
     text-align: center;
     font-size: 24px;
@@ -97,7 +98,6 @@
     display: inline-block;
     
 }
-
 .notaCurso{
     background-color: #117A25;
     border-radius: 5px;
@@ -153,7 +153,9 @@
 /* MATERIAS */
 
 .tabelas{
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-left: auto;
     margin-right:auto;
     max-width: 1200px;
