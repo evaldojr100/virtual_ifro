@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name=description content="Pagina do Ambiente virtual do IFRO vilhena">
     <link rel="stylesheet" href="index_CSS.css">
     <!-- Font-->
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
@@ -13,14 +14,24 @@
 
     <header>
         <div class="header">
+            
             <div class="header__titulo container">
-               <div class="header__titulo--instituto ">Curso Superior de Tecnologia em</div>
-               <div class="header__titulo--curso">Analise e Desenvolvimento de Sistemas</div>
+                <div class='icon_menu'>
+                    <label class ='menu__label' for='hamburguer'>
+                        <img src="images/view_headline-24px.svg" alt="Menu">
+                    </label>
+                    <input class ='enable_menu' type='checkbox' id=hamburguer onclick="open_menu()">
+                </div>
+                <div>
+                    <div class="header__titulo--instituto ">Curso Superior de Tecnologia em</div>
+                    <div class="header__titulo--curso">Analise e Desenvolvimento de Sistemas</div>
+                </div>
             </div>
         </div>
 
         <nav style='background-color: #00420C'>
-            <ul class='menu container'>
+            
+            <ul class='menu container' id='menu'>
                 <li class="menu__item"><a href="index.html">Inicio</a></li>
                 <li class="menu__item"><a href="materias.html">Disciplinas</a></li>
                 <li class="menu__item"><a href="professores.html">Professores</a></li>
@@ -57,7 +68,7 @@
                         <h1 class="subtitulo">Processo Seletivo</h1>
                         <p class="texto">
                             Entrada Anual:
-                            <ul style="padding:5px"></ul>
+                            <ul style="padding:5px">
                                 <li>20 vagas através da nota do ENEM</li>
                                 <li>20 vagas através da nota do Ensino Médio</li>
                             </ul>
@@ -96,4 +107,17 @@
         </div>
     </footer>
 </body>
+<script>
+    function open_menu(){
+        let icon = document.getElementById('hamburguer');
+        let menu = document.getElementById('menu')
+        if(icon.checked){
+            menu.style.display='flex';
+            console.log('Habilitado');
+        }else{
+            menu.style.display='none'
+            console.log('Desabilitado');
+        }
+    }
+</script>
 </html>
