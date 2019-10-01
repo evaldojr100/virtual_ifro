@@ -54,8 +54,10 @@
 @media(min-width:600px){
     .menu{
         flex-direction: row;
+        
     }
 }
+
 
 .menu__item{
     padding: 5px;
