@@ -53,11 +53,9 @@
 }
 @media(min-width:600px){
     .menu{
-        flex-direction: row;
-        
+        flex-direction: row;       
     }
 }
-
 
 .menu__item{
     padding: 5px;
@@ -84,16 +82,12 @@
     display: none;
 }
 
-.enable_menu:checked ~ ul{
-    background-color: red;
-    
-
-}
 /* Main */
 .main{
-    padding: 30px;
     display:flex;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    padding: 30px;
+    justify-content: center;
 }
 
 @media (min-width:600px){
@@ -130,7 +124,8 @@
 .texto{
     text-align: justify;
     font-size: 18px;
-    display: inline-block;
+    
+    
     
 }
 .notaCurso{
