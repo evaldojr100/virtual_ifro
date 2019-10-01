@@ -126,7 +126,17 @@
             
         }else{
             icon.checked=false;
-            menu.style.display = 'none'
+            menu.style.display = 'none';
+        }
+    })
+
+    window.addEventListener('load',() => {
+        if(screen.width>600){
+            menu.style.display = 'flex';
+            
+        }else{
+            icon.checked=false;
+            menu.style.display = 'none';
         }
     })
 
